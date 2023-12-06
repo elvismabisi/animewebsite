@@ -1,0 +1,132 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --hue: 228;
+  --first-color: hsl(var(--hue), 45%, 42%);
+  --title-color: #fff;
+  --text-color: hsl(var(--hue), 8%, 65%);
+  --body-color: hsl(var(--hue), 26%, 11%);
+  --container-color: hsl(var(--hue), 22%, 12%);
+  --container-color-light: hsl(var(--hue), 21%, 14%);
+  --border-color: hsl(var(--hue), 23%, 24%);
+  --black: #000;
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: 'Montserrat', sans-serif;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.625rem;
+
+  /*========== Font weight ==========*/
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-700: 700;
+
+  /*========== Transition ==========*/
+  --transition: ease-in-out;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--weight-700);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+/*=============== HEADER & NAV ===============*/
+
+/* Scroll header */
+
+/* Active link */
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTON ===============*/
+
+/*=============== BRAND ===============*/
+
+/*=============== ANIME ===============*/
+
+/*=============== SUBSCRIPTION ===============*/
+
+/*=============== TRENDING ANIME ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 450px) {
+}
