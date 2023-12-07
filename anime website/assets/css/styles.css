@@ -114,6 +114,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav{
@@ -134,6 +135,9 @@ img {
 }
 
 /* Scroll header */
+.scroll-header {
+  background-color: var(--black);
+}
 
 /* Active link */
 .nav__link:hover,
@@ -370,9 +374,27 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .home__container {
+    grid-template-columns: 5fr 7fr;
+  }
+
+  .footer__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* For medium devices */
