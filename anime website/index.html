@@ -19,22 +19,97 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive anime website</title>
+    <title>Anime website experiment</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Online Anime</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Our Process</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Plans</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home"></section>
+      <section class="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+          <h1 class="home__title">BEST ANIME AND MANGA STREAMING WEBSITE</h1>
+          <p class="home__description">Welcome to our enchanting world of anime,
+             where imagination knows no bounds! 
+             Immerse yourself in a kaleidoscope of captivating stories,
+             vibrant characters, and breathtaking adventures. 
+             Unleash your inner anime spirit and let the epic tales unfold!
+            </p>
+            <a href="#" class="btn">Start Your Journey</a>
+          </div>
+
+          <img src="assets/img/home.png" alt="" class="home__img">
+        </div>
+      </section>
 
       <!--==================== BRAND ====================-->
-      <section class="brand"></section>
+      <section class="brand">
+        <div class="swiper brand-swiper container">
+          <div class="swiper-wrapper">
+            <div class="brand__item swiper-slide">
+              <img src="assets/img/logo-1.png" alt="" class="brand__logo">
+            </div>
+
+            <div class="brand__item swiper-slide">
+              <img src="assets/img/logo-2.png" alt="" class="brand__logo">
+            </div>
+
+            <div class="brand__item swiper-slide">
+              <img src="assets/img/logo-3.png" alt="" class="brand__logo">
+            </div>
+
+            <div class="brand__item swiper-slide">
+              <img src="assets/img/logo-4.png" alt="" class="brand__logo">
+            </div>
+
+            <div class="brand__item swiper-slide">
+              <img src="assets/img/logo-5.png" alt="" class="brand__logo">
+            </div>
+
+            <div class="brand__item swiper-slide">
+              <img src="assets/img/logo-6.webp" alt="" class="brand__logo">
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== SPECIAL ANIME ====================-->
-      <section class="special__anime container section"></section>
+      <section class="special__anime container section">
+        <h2 class="section__title">Recommended for you</h2>
+      </section>
 
       <!--==================== SUBSCRIPTION ====================-->
       <section class="subscription"></section>
