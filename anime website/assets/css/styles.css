@@ -134,6 +134,11 @@ img {
   transition: all 0.3s var(--transition);
 }
 
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+
 /* Scroll header */
 .scroll-header {
   background-color: var(--black);
@@ -399,14 +404,118 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .home__container,
+  .subscription__container {
+    grid-template-columns: 1fr;
+  }
+
+  .home__content {
+    order: 1;
+  }
+
+  .subscription {
+    height: 100%;
+  }
+
+  .subscription__description {
+    max-width: 100%;
+  }
+
+  .item__title,
+  .tweet__title{
+    font-size: var(--small-font-size);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--title-color);
+    width: 400px;
+    height: 100%;
+    padding: 4rem 1rem;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: .75rem;
+  }
+
+  .nav__link,
+  .nav__close {
+    color: var(--black);
+  }
+
+  .nav__link {
+    padding: 0.75rem;
+  }
+
+  .active__link {
+    background-color: var(--first-color);
+    color: var(--title-color);
+    display: block;
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: block;
+    font-size: var(--h2-font-size);
+  }
+
+  .nav__toggle {
+    color: var(--title-color);
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* For small devices */
 @media screen and (max-width: 576px) {
+  .section {
+    padding-block: 3rem;
+  }
+
+  .nav {
+    height: var(--header-height);
+  }
+
+  .nav__menu {
+    width: 100%;
+  }
+
+  .footer__container{
+    padding-block: 2rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
+  .brand__logo{
+    width: 55%;
+  }
+
+  .footer__anime-item img {
+    width: 85px;
+  }
+
+  .footer__instagram {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
