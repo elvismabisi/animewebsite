@@ -7,6 +7,11 @@
 /* Validate if constant exists */
 
 /*=============== SCROLL HEADER ===============*/
+function scrollHeader() {
+    
+}
+
+window.addEventListener('scroll',scrollHeader)
 
 /*=============== BRAND SWIPER ===============*/
 var brandSwiper = new Swiper('.brand-swiper', {
