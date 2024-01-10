@@ -8,6 +8,10 @@ Welcome to the Anime Website project! This web application is a platform dedicat
 4. SwiperJS: A modern, mobile-friendly slider library for creating touch sliders and carousels.
 5. Font Awesome: Icon toolkit for adding stylish icons to the website.
 
+## Code Overview
+
+The code for this website is relatively simple. The main HTML file (`index.html`) contains the basic structure of the website, including the header, footer, and main content area. The CSS file (`styles.css`) contains the styling for the website. The JavaScript file (`main.js`) contains the code for the carousel and the Instagram feed.
+
 # Getting Started
 To run this web app locally, follow these steps:
 
